@@ -15,7 +15,7 @@ Prepare for two kind of audio files
 
 ### Environment setup
 
-1. Prepare for GPU
+1. Update requirements.txt depending on your computer environment.
 
 1. Install dependencies
 
