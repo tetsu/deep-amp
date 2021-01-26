@@ -13,6 +13,16 @@ Prepare for two kind of audio files
 
 1. Update config.yml with your file names
 
+### Environment setup
+
+1. Prepare for GPU
+
+1. Install dependencies
+
+```sh
+pip install -r requirements.txt
+```
+
 
 ### Train model
 ```sh
