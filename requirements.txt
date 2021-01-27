@@ -13,7 +13,8 @@ protobuf==3.5.1
 PyYAML==3.12
 # scipy==1.0.0
 scipy
-six==1.11.0
+# six==1.11.0
+six
 tensorflow-gpu==1.5.0
 tensorflow-tensorboard==1.5.1
 Werkzeug==0.14.1
