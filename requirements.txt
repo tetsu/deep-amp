@@ -9,7 +9,8 @@ Markdown==2.6.11
 # numpy==1.14.0
 numpy
 # pkg-resources==0.0.0
-protobuf==3.5.1
+#protobuf==3.5.1
+protobuf
 PyYAML==3.12
 # scipy==1.0.0
 scipy
