@@ -5,9 +5,6 @@ batch_size: 16
 max_epochs: 10000
 patience: 50
 train_data:
-  - [./data/train_x1.wav, ./data/train_y1.wav]
-  - [./data/train_x2.wav, ./data/train_y2.wav]
-  - [./data/train_x3.wav, ./data/train_y3.wav]
-  - [./data/train_x4.wav, ./data/train_y4.wav]
+  - [./data/TrainingX2.wav, ./data/TrainingY2.wav]
 val_data:
-  - [./data/val_x.wav, ./data/val_y.wav]
+  - [./data/ValidationX.wav, ./data/ValidationY.wav]
