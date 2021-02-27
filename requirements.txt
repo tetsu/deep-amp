@@ -1,19 +1,24 @@
 # absl-py==0.1.10
 absl-py
-bleach==1.5.0
-enum34==1.1.6
+# bleach==1.5.0
+bleach
+# enum34==1.1.6
+enum34
 # h5py==2.7.1
 h5py
-html5lib==0.9999999
+# html5lib==0.9999999
+html5lib
 # Keras==2.1.3
 keras
-Markdown==2.6.11
+# Markdown==2.6.11
+Markdown
 # numpy==1.14.0
 numpy
 # pkg-resources==0.0.0
 #protobuf==3.5.1
 protobuf
-PyYAML==3.12
+# PyYAML==3.12
+PyYAML
 # scipy==1.0.0
 scipy
 # six==1.11.0
