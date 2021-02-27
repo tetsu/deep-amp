@@ -3,7 +3,7 @@ input_timesteps: 5280
 output_timesteps: 480
 batch_size: 16
 max_epochs: 10000
-patience: 50
+patience: 0
 train_data:
   - [./data/TrainingX2.wav, ./data/TrainingY2.wav]
 val_data:
