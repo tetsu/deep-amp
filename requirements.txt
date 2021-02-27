@@ -18,7 +18,9 @@ PyYAML==3.12
 scipy
 # six==1.11.0
 six
-tensorflow-gpu==1.5.0
-tensorflow-tensorboard==1.5.1
+# tensorflow-gpu==1.5.0
+tensorflow-gpu==1.15.5
+# tensorflow-tensorboard==1.5.1
+tensorflow-tensorboard
 # Werkzeug==0.14.1
 Werkzeug
