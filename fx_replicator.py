@@ -4,9 +4,14 @@ import wave
 import yaml
 import numpy as np
 from numpy.lib.stride_tricks import as_strided
-from keras.models import Sequential
-from keras.layers import CuDNNLSTM, BatchNormalization
-from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
+# from keras.models import Sequential
+# from keras.layers import CuDNNLSTM, BatchNormalization
+# from keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
+# from keras.losses import mean_squared_error
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Activation
+from tensorflow.keras.layers import LSTM, BatchNormalization
+from tensorflow.keras.callbacks import TensorBoard, ModelCheckpoint, EarlyStopping
 from keras.losses import mean_squared_error
 
 def load_wave(wave_file):
@@ -36,9 +41,12 @@ def random_clop(x, y, timesteps, batch_size):
 
 def build_model(timesteps):
     model = Sequential()
-    model.add(CuDNNLSTM(64, input_shape=(timesteps, 1), return_sequences=True, name="lstm_1"))
-    model.add(CuDNNLSTM(64, return_sequences=True, name="lstm_2"))
-    model.add(CuDNNLSTM(1, return_sequences=True, name="lstm_out"))
+    # model.add(CuDNNLSTM(64, input_shape=(timesteps, 1), return_sequences=True, name="lstm_1"))
+    # model.add(CuDNNLSTM(64, return_sequences=True, name="lstm_2"))
+    # model.add(CuDNNLSTM(1, return_sequences=True, name="lstm_out"))
+    model.add(LSTM(64, input_shape=(timesteps, 1), return_sequences=True, name="lstm_1"))
+    model.add(LSTM(64, return_sequences=True, name="lstm_2"))
+    model.add(LSTM(1, return_sequences=True, name="lstm_out"))
     return model
 
 class LossFunc:
