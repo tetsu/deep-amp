@@ -1,0 +1,14 @@
+absl-py
+bleach
+enum34
+h5py
+html5lib
+keras
+Markdown
+numpy
+protobuf
+PyYAML
+scipy
+six
+tensorboard
+Werkzeug
